@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!-- saved from url=(0425)http://customize.ews.m.jaeapp.com/front/wfz/index?ut_sk=1.V2V0%2BsncNvsDAGv038HS7MlF_21380790_1540519186171.TaoPassword-Weixin.windvane&itemId=549932079834&sourceType=other&suid=EA34A3BD-FD00-4CBB-9AEA-F8124E4C1237&_tbScancodeApproach_=scan&un=516062ed0a35bfd00d92f5aa52e6dceb&share_crt_v=1&sp_tk=77+lUjA5V2JTU29aemLvv6U=&cpp=1&shareurl=true&spm=a313p.22.23g.981356911713&short_name=h.38mUJNY&app=chrome&visa=701e9209f542c59d -->
+<html lang="en" data-dpr="1" style="font-size: 54px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>五芳斋 私人定制粽</title>
+    
+    <!-- 在iOS下开启全屏模式  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 隐藏 Sarafi 状态栏  -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <!--下面两个js要放在样式的最前面 -->
+    <script type="text/javascript" async="" src="js/index.js" id="aplus-sufei"></script>
+    <script src="js/common.js"></script>
+    <script src="js/flexible_css.js"></script>
+
+
+<style>html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}</style>
+    <script src="js/flexible.js"></script><meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/five-style.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">
+<body>
+<!-- 包装数量 四个装还是六个装 -->
+<input type="hidden" id="packingtype" value="4">
+   <div class="loading">
+       <div class="loading-img">
+           <img class="loading-img01" src="img/loading-img01.png" alt="">
+           <p id="progress-sz">0%</p>   
+           <img class="progress-last-rice" src="img/last-rice.png" alt="">        
+           <div class="m-progress">
+            <div id="bar" style="width: 0%;" class="m-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">				    
+            </div>
+           </div>
+       </div>
+   </div>
+    <div class="five-page" style="display:none;">
+         <!-- 音乐图标 -->
+         <div class="music"><img src="img/music-open.png"></div>
+
+         <!-- 首页 -->
+         <div class="index-page page" id="page2" data-spm-anchor-id="a1z51.23536279.0.i0">
+              <div class="index-title"><img src="img/index-title.png"></div>
+              <div class="index-img">
+             </div>
+             <div class="start-btn" id="start-btn"><img src="img/start-btn.png"></div>
+         </div>
+         
+         <!-- 制作页面 -->
+         <div class="start-page page" id="page3" style="display: none;">
+               <!-- 待包的粽子区域 -->
+               <div class="standby-box" id="standby-box" style="top:50px;">
+                    <div class="standby-icon"></div>
+                    <div class="standby-icon"></div>
+                    <div class="standby-icon"></div>
+                    <div class="standby-icon"></div>
+                    <div class="standby-icon" style="display: none;"></div>
+                    <div class="standby-icon" style="display: none;"></div>
+                    <div class="clear"></div>
+               </div>
+               <div class="h30"></div>
+               <!-- 操作区域 -->
+               <div class="operation-box" id="operation-box">
+               			<!-- 名字 -->
+                    <div class="operate-name font34" id="sweetName" style="opacity: 0;">
+                         <span></span>
+                         <font style="opacity: 0;">+</font>
+                         <span></span>
+                         <font style="opacity: 0;">+</font>
+                         <span></span>
+                    </div>
+                    <div class="operate-name font34" id="saltyName" style="opacity: 0;">
+                         <span></span>
+                         <font style="opacity: 0;">+</font>
+                         <span></span>
+                         <font style="opacity: 0;">+</font>
+                         <span></span>
+                    </div>
+                    <div class="comm-btn tz-col1-comm-btn">
+                      <div class="tz-col1-comm-cont">
+                            <div class="renew-chose tz-col1-comm-area1" id="renew-chose"><img src="img/rechose-btn.png"></div> 
+                            <div class="next-step tz-col1-comm-area2" id="next-step"><img src="img/chose-ok.png"></div>
+                      </div>
+                     </div>
+                    <!-- 中间大粽子 -->
+                    <div class="operation-top rice-bg1" id="operation-top">
+                         <div class="h100"></div>
+                         <div class="operation-all">
+                              <!-- 第一种样式 -->
+                              <div class="operate1" style="display: none;">
+                                   <span class="span1_1"><img src="img/lucency.jpg"></span>
+                              </div>  
+                              <!-- 第二种样式 -->
+                              <div class="operate2" style="display: none;">
+                                  <span class="span2_1"><img src="img/lucency.jpg"></span>
+                                  <span class="span2_2"><img src="img/lucency.jpg"></span>
+                              </div>  
+                              <!-- 第三种样式 -->
+                              <div class="operate3" style="display: none;">
+                                  <span class="span3_1"><img src="img/lucency.jpg"></span>
+                                  <span class="span3_2"><img src="img/lucency.jpg"></span>
+                                  <span class="span3_3"><img src="img/lucency.jpg"></span>
+                                  <span class="span1_1"><img src="img/lucency.jpg"></span>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- 选择馅料 -->
+                    <div class="operation-footer">
+                         <div class="chose-btn">
+                              <ul>
+                                 <li class="li-cur" value="chose-middle1">
+                                     <img src="img/sweet-btn.png">
+                                     <span class="check-cur"><img src="img/check-cur.png"></span>
+                                  </li>
+                                 <li value="chose-middle2">
+                                     <img src="img/salt-btn.png">
+                                     <span class="check-cur"><img src="img/check-cur.png"></span>
+                                 </li>
+                              </ul>
+                         </div>
+                         <div class="h28"></div>
+                        
+                         <div class="menu-all">
+                              <div class="menu-box" id="chose-middle1">
+                                   <!-- <div class="menu-box-fl menu-box-fl2">
+                                        <ul>
+                                            <li value="NO:51">
+                                                <span><img src="img/big-title0_1.png"></span>
+                                                <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:52">
+                                               <span><img src="img/big-title0_2.png"></span>
+                                               <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:56">
+                                               <span><img src="img/big-title0_3.png"></span>
+                                               <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:59">
+                                               <span><img src="img/big-title0_4.png"></span>
+                                               <div class="icon-mask"></div>
+                                             </li>
+                                        </ul>
+                                   </div> -->
+                                   <div class="menu-box-fr menu-box-fr2">
+                                        <ul>
+                                          <li value="NO:51">
+                                              <span class="fill-box"><img src="img/sweet-icon1.png"></span>
+                                              <font class="fill-name font28">豆沙球</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:52">
+                                              <span class="fill-box"><img src="img/sweet-icon2.png"></span>
+                                              <font class="fill-name font24">豆沙+巧克力</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:53">
+                                              <span class="fill-box"><img src="img/sweet-icon3.png"></span>
+                                              <font class="fill-name font26">豆沙+摩卡</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:55">
+                                            <span class="fill-box"><img src="img/sweet-icon4.png"></span>
+                                            <font class="fill-name font28">豆沙+蜜枣</font>
+                                            <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:56">
+                                              <span class="fill-box"><img src="img/sweet-icon5.png"></span>
+                                              <font class="fill-name font28">燕窝</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:58">
+                                              <span class="fill-box"><img src="img/sweet-icon6.png"></span>
+                                              <font class="fill-name font28">六颗蜜枣</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:59">
+                                              <span class="fill-box"><img src="img/sweet-icon7.png"></span>
+                                              <font class="fill-name font28">芝麻+核桃</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:57">
+                                              <span class="fill-box"><img src="img/sweet-icon8.png"></span>
+                                              <font class="fill-name font28">莲蓉+蛋黄</font>
+                                              <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:56">
+                                            <span class="fill-box"><img src="img/sweet-icon5.png"></span>
+                                            <font class="fill-name font28">燕窝</font>
+                                            <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:58">
+                                            <span class="fill-box"><img src="img/sweet-icon6.png"></span>
+                                            <font class="fill-name font28">六颗蜜枣</font>
+                                            <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:59">
+                                            <span class="fill-box"><img src="img/sweet-icon7.png"></span>
+                                            <font class="fill-name font28">芝麻+核桃</font>
+                                            <div class="icon-mask"></div>
+                                          </li>
+                                          <li value="NO:57">
+                                            <span class="fill-box"><img src="img/sweet-icon8.png"></span>
+                                            <font class="fill-name font28">莲蓉+蛋黄</font>
+                                            <div class="icon-mask"></div>
+                                          </li>
+                                          
+                                          
+                                        </ul>
+                                        <div class="clear"></div>
+                                   </div>
+                                   <div class="clear"></div>
+                              </div>  
+                              <div class="menu-box" id="chose-middle2" style="display: none;">
+                                   <!-- <div class="menu-box-fl menu-box-fl1">
+                                        <ul>
+                                            <li value="NO:29">
+                                              <span><img src="img/big-title1_1.png"></span>
+                                              <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:17">
+                                              <span><img src="img/big-title1_2.png"></span>
+                                              <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:31">
+                                               <span><img src="img/big-title1_3.png"></span>
+                                               <div class="icon-mask"></div>
+                                            </li>
+                                            <li value="NO:39">
+                                               <span><img src="img/big-title1_4.png"><span>
+                                               <div class="icon-mask"></div>
+                                            </span></span></li>
+                                        </ul>
+                                   </div> -->
+                                   <div class="menu-box-fr menu-box-fr1">
+                                        <ul>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon1.png"></span>
+                                              <font class="fill-name font28">咸蛋黄</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon2.png"></span>
+                                              <font class="fill-name font28">牛筋</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon3.png"></span>
+                                              <font class="fill-name font28">牛腩</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon4.png"></span>
+                                              <font class="fill-name font28">章鱼须</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon5.png"></span>
+                                              <font class="fill-name font28">板栗</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon6.png"></span>
+                                              <font class="fill-name font28">虾滑</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon7.png"></span>
+                                              <font class="fill-name font28">鲍鱼</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon8.png"></span>
+                                              <font class="fill-name font28">干贝</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon9.png"></span>
+                                              <font class="fill-name font28">鱼滑</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon10.png"></span>
+                                              <font class="fill-name font28">肉松蛋黄</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon11.png"></span>
+                                              <font class="fill-name font24">黑猪梅花肉</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                           <li>
+                                              <span class="fill-box"><img src="img/salt-icon12.png"></span>
+                                              <font class="fill-name font24">黑猪后腿肉</font>
+                                              <div class="icon-mask"></div>
+                                           </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                   </div>
+                                   <div class="clear"></div>
+                              </div> 
+                              <!-- 选择馅料的时候出来这个弹窗，最后一个粽子的时候包完 显示下一步 -->
+
+                              <!-- 重新选择按钮 -->
+                              <!-- <div class="comm-btn">
+                                  <div class="renew-chose" id="renew-chose"><img src="img/rechose-btn.png"></div> 
+                                  <div class="next-step" id="next-step"><img src="img/chose-ok.png"></div>
+                              </div> -->
+                         </div>
+                    </div>
+               </div>
+         </div>
+         <!-- 展示包装 -->
+         <div class="pack-page page" id="page4" style="display: none;">
+             
+              <div class="pack-box-all">
+                   <div class="h42"></div>
+                   <div class="pack1 pack">
+                       <!-- 右边按钮  下一步 -->
+                        <div class="comm-btn tz-col1-comm-btn">
+                                <div class="tz-col1-comm-cont">
+                                        <div class="next-btn tz-col1-comm-next-btn" id="next-step2"><img src="img/next-btn.png"></div>
+                                </div>
+                       </div>
+                       <div class="cloud-title">
+                            <span class="next-title1"><img src="img/next-title1.png"></span>
+                       </div>
+                       <div class="h20"></div>
+                       <div class="pack-box-bg">
+                            <!-- 六只装 -->
+                            <div class="pack-table" style="display: none;">
+                                 <ul>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                    <li>
+                                        <span class="rice-img"><img src="img/last-rice.png"></span>
+                                        <font class="rice-name font24">后腿肉+梅花肉</font>
+                                        <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                    </li>
+                                 </ul>
+                            </div>
+                            <!-- 四只装 -->
+                            <div class="pack-table2">
+                               <ul>
+                                  <li>
+                                      <span class="rice-img"><img src="img/last-rice.png"></span>
+                                      <font class="rice-name font24">后腿肉+梅花肉</font>
+                                      <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                  </li>
+                                  <li>
+                                      <span class="rice-img"><img src="img/last-rice.png"></span>
+                                      <font class="rice-name font24">后腿肉+梅花肉</font>
+                                      <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                  </li>
+                                  <li>
+                                      <span class="rice-img"><img src="img/last-rice.png"></span>
+                                      <font class="rice-name font24">后腿肉+梅花肉</font>
+                                      <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                  </li>
+                                  <li>
+                                      <span class="rice-img"><img src="img/last-rice.png"></span>
+                                      <font class="rice-name font24">后腿肉+梅花肉</font>
+                                      <i class="renew-btn font26">重&nbsp;&nbsp;&nbsp;选</i>
+                                  </li>
+                               </ul>
+                            </div>
+                       </div>
+                       <div class="h40"></div>
+                       <!-- <div class="next-btn" id="next-step2"><img src="img/next-btn.png"></div> -->
+                   </div>
+                   <div class="pack2 pack" style="display: none;">
+                        <div class="cloud-title">
+                            <div class="h40"></div>
+                            <span class="next-title2"><img src="img/chose-like.png"></span>
+                       </div>
+                       <div class="h20"></div>
+                       <div class="packbox">
+                            <div class="packbox-table">
+                                 <ul>
+                                    <!-- <li value="FT05粑" class="checked-li">
+                                       <span><img src="/resources/wfz/images2/packbag1.png"/></span>
+                                       <font><img src="/resources/wfz/images2/check-cur.png"/></font>
+                                    </li> -->
+                                    <li value="FT03生" class="checked-li">
+                                      <span><img src="img/packbag2.png"></span>
+                                      <font><img src="img/check-cur.png"></font>
+                                    </li>
+                                    <li value="FT06撸">
+                                       <span><img src="img/packbag3.png"></span>
+                                       <font><img src="img/check-cur.png"></font>
+                                     </li>
+                                    <!-- <li value="FT07睡">
+                                       <span><img src="/resources/wfz/images2/packbag4.png"/></span>
+                                       <font><img src="/resources/wfz/images2/check-cur.png"/></font>
+                                    </li> -->
+                                    <li value="FT01大">
+                                       <span><img src="img/packbag5.png"></span>
+                                       <font><img src="img/check-cur.png"></font>
+                                    </li>
+                                    <li value="FT02小">
+                                       <span><img src="img/packbag6.png"></span>
+                                       <font><img src="img/check-cur.png"></font>
+                                    </li>
+                                </ul>
+                            </div>
+                       </div>
+                       <div class="h10"></div>
+                       <!-- 返回 按钮 -->
+                       <div class="comm-btn tz-col1-comm-btn">
+                            <div class="tz-col1-comm-cont">
+                                    <div class="btn-all">
+                                            <div class="btn2 btn" id="btn2"><img src="img/sure.png"></div>
+                                            <div class="btn1 btn" id="btn1"><img src="img/back-btn.png"></div>
+                                       </div>
+                            </div>
+                       </div>
+                       
+                   </div>
+              </div>
+              
+         </div>
+         
+         <!-- 最后一页 -->
+         <div class="last-page page" id="page5" style="display: none;">
+              <div class="last-page-icon1"><img src="img/last-page-icon1.png"></div>
+              <div class="last-page-icon2"><img src="img/last-page-icon2.png"></div>
+              <div class="last-text"><img src="img/last-page-text.png"></div>
+              <div class="last-page-icon3"><img src="img/last-page-icon3.png"></div>
+              <div class="sure-btn"><img value="tb" src="img/sure-btn.png"></div>
+         </div>
+         <!-- 所有弹窗 -->
+         <!-- 开始包粽子的提示弹窗 -->
+         <div class="start-work-tan tan-box1" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="gz-text"><img src="img/gz-text.png"></div>
+              </div>
+         </div>
+
+         <!-- 你还可以继续包 -->
+         <div class="start-work-tan tan-box2" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="continue-text"><img src="img/continue-text.png"></div>
+              </div>
+         </div>
+         
+         <!-- 不可选择 -->
+         <div class="start-work-tan tan-box3" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="continue-text" style="height:1.3rem;"><img src="img/continue-text-1.png"></div>
+              </div>
+         </div>
+
+         <!-- 你需要再选两份馅料 -->
+         <div class="start-work-tan tan-box4" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="continue-text"><img src="img/continue-text-4.png"></div>
+              </div>
+         </div>
+         
+         <!-- 你需要再选一份馅料 -->
+         <div class="start-work-tan tan-box5" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="continue-text"><img src="img/continue-text-3.png"></div>
+              </div>
+         </div>
+         
+         <!-- 你还没有选择馅料 -->
+         <div class="start-work-tan tan-box6" style="display: none;">
+              <div class="tan-mask"></div>
+              <div class="start-tan">
+                   <i class="cuo" onclick="closeBox();"><img src="img/cuo-icon.png"></i>
+                   <div class="continue-text"><img src="img/continue-text-2.png"></div>
+              </div>
+         </div>
+         
+    </div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tida.js"></script>
+<script type="text/javascript" src="js/head.js"></script>
+<script src="js/fillings_json.js"></script>
+<!-- <script src="/resources/wfz/js/tbIndex.js"></script> -->
+<script src="js/fillings_json.js"></script>
+<script src="js/five-js.js"></script>
+
+
+</body></html>

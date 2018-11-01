@@ -1,0 +1,99 @@
+.index-page{
+    position: relative;
+}
+.five-page .index-page .index-title {
+    width: 87px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 0.866667rem;
+  }
+  .five-page .index-page .start-btn {
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/big-btn-bg.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 200;
+  }
+.loading-img{
+  text-align: center;
+}
+  .loading-img01{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    animation: heart 1.3s ease-in-out 2.7s infinite alternate;
+
+  }
+  @keyframes heart{
+    from{transform:translate(0,0)}
+    to{transform:translate(0,10px)}
+    }
+    .m-progress {
+      overflow: hidden;
+      margin: 0 auto;
+      height: 24px;
+      width: 300px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #584305;
+    }
+    .m-progress-bar {
+      float: left;
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      line-height: 20px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      color: #fff;
+      text-align: center;
+      background-color: #3d812d;
+    }
+    .progress-last-rice{
+      width: 40px;
+      height: 40px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+    #progress-sz{
+      color: #3d812d;
+      margin-top: 70px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .tz-col1-comm-btn{
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(../img/big-btn-bg.png) no-repeat;
+      background-size: 100%;
+    }
+    .tz-col1-comm-area1,.tz-col1-comm-area2{
+      width: 50%;
+      margin: 0 auto;
+    }
+    .tz-col1-comm-area1{
+      margin-bottom: 20px;
+    }
+    .tz-col1-comm-cont{
+      display: block;
+      padding-left: 20px;
+    }
+    .continue-text img{
+      width: 70%;
+      margin: 0 auto;
+    }
