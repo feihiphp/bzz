@@ -53,7 +53,7 @@ var preload = new Array(
 	return document.getElementById(d);
 	
 	}
-	var sz="100%";
+	var sz="50%";
 		
 	function smation(){ 
 		// sz为0的时候 bar为0
@@ -480,7 +480,7 @@ $(function(){
         	saltyNo = 'NO:50';
         } else {
         	// 此处为已选零种,在第一个位置放入图片,剩余可选馅料置白,添加至临时存储
-        	$($('.operate3 img')[0]).attr('src', $(this).children('span').children('img')[0].src);
+			$($('.operate3 img')[0]).attr('src', $(this).children('span').children('img')[0].src);
 			// 显示馅料名称
 			showNames('salty', $(this).children('font').text(), 1);
         	saltyZZ.push($(this).children('font').text());
