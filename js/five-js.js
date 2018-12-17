@@ -1,4 +1,3 @@
-alert('five.js------');
 // 甜粽子临时存储
 var sweetZZ = "none";
 // 咸粽子临时存储
@@ -9,7 +8,7 @@ var allZZ = new Array();
 var allNo = 0;
 var allIndex = 0;
 // 包装存储
-var packagess = 'FT03生';
+var $package = 'FT03生';
 //定制单号
 var customizeNo;
 // 图片加载
@@ -49,36 +48,35 @@ var preload = new Array(
 	);
 
 //进度条js
-/*
 	function $s(d){
 	
 	return document.getElementById(d);
 	
 	}
-	*/
 	var sz="50%";
 		
 	function smation(){ 
 		// sz为0的时候 bar为0
 	if (sz=="0%") {
-		$("#bar").css({'width':0}); 
+		$s("bar").style.width = 0; 
 	}
-	$("#bar").width($("#bar").width()+10);
-	$("#progress-sz").html(parseInt((parseInt($("#bar").css('width'))/(parseInt($('#m-progress').css('width'))))*100)+'%'); 
-	if($("#bar").css('width') == $('#m-progress').css('width')){ 
+	$s("bar").style.width = parseInt($s("bar").style.width) + 1 + "%"; 
+	$s("progress-sz").innerHTML = $s("bar").style.width; 
+	if($s("bar").style.width == "100%"){ 
 		$(".loading").hide();//当页面加载完成后将loading页隐藏  
 		$('.five-page').show();
-		window.clearInterval(bar);  //禁止执行  停住
+		// window.clearInterval(bar);  禁止执行  停住
 	  }
 	} 
 	var bar = setInterval(function(){
 	smation();
-	}, 300);
+	}, 30);
 	window.onload = function(){
 		bar;
 	}
 
 $(function(){
+	alert('123');
 	// 音乐暂停/播放
 	$('.five-page .music img').click(function() {
 		// 判断当前状态
@@ -101,7 +99,7 @@ $(function(){
         $(this).addClass("checked-li");
         $(this).siblings().removeClass("checked-li");
         // 获取包装编号并存储至容器
-        packagess = $(this).attr('value');
+        $package = $(this).attr('value');
 	});
 	// 根据规格显示粽子数量
 	if($("#packingtype").val() == 4) {
@@ -604,13 +602,13 @@ function stOrder() {
 		alert('网络原因下单失败，请重新点击下单！');
 		return;
 	}
-	var packUrl = pacUrl(packagess);
+	var packUrl = pacUrl($package);
 	var params = {
 			pic: [{id : 1, url : packUrl}],
 			text: [{
 				id: 1, content: '定制单号:' + customizeNo
 			}, {
-				id: 2, content: '包装:' + packagess
+				id: 2, content: '包装:' + $package
 			}, {
 				id: 3, content: '馅料编号:' + allZZ.join(",")
 			}]
@@ -629,7 +627,7 @@ function yzOrder() {
 	// 拼接JSON
 	var json = [
 		'定制单号:' + customizeNo, 
-		'包装:' + packagess, 
+		'包装:' + $package, 
 		'馅料编号:' + allZZ.join(",")
     ];
 	// ajax请求后台接口
@@ -695,7 +693,7 @@ function closeBox(){
 
 function saveDataAndRetCusNo() {
 	var json = {};
-	json['包装'] = packagess;
+	json['包装'] = $package;
 	json['馅料编号'] = allZZ;
 	$.ajax({
 		url : "/front/wfz/saveDataAndRetCusNo",
