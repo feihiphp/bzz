@@ -55,11 +55,6 @@ var preload = new Array(
 	
 	}
 	*/
-	alert('1');
-setInterval(function(){
-alert('1');
-},100)
-alert('1');
 	var sz="50%";
 		
 	function smation(){ 
