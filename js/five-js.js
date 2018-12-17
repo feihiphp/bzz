@@ -1,3 +1,4 @@
+alert('five.js');
 // 甜粽子临时存储
 var sweetZZ = "none";
 // 咸粽子临时存储
@@ -46,8 +47,6 @@ var preload = new Array(
 	"img/continue-text.png",
 	"img/inde-img.png"
 	);
-
-	alert('five.js');
 
 //进度条js
 /*
