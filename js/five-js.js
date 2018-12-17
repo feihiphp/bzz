@@ -55,6 +55,10 @@ var preload = new Array(
 	
 	}
 	*/
+setInterval(function(){
+alert('1');
+},100)
+
 	var sz="50%";
 		
 	function smation(){ 
