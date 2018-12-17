@@ -960,6 +960,7 @@ img {
 .five-page .start-page .operation-box .operate-name {
   font-family: MyFont;
   position: absolute;
+  visibility: hidden;
   top: 0;
   right: 4.2rem;
 }

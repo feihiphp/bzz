@@ -10,6 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--下面两个js要放在样式的最前面 -->
     <script type="text/javascript" async="" src="js/index.js" id="aplus-sufei"></script>
     <script src="js/common.js"></script>
@@ -449,11 +450,24 @@
          <div class="last-page page" id="page5" style="display: none;">
               <div class="last-page-icon1"><img src="img/last-page-icon1.png"></div>
               <div class="last-page-icon2"><img src="img/last-page-icon2.png"></div>
-              <div class="last-text"><img src="img/last-page-text.png"></div>
-              <div class="last-page-icon3"><img src="img/last-page-icon3.png"></div>
-              <div class="sure-btn">
-                  <img value="tb" src="img/sure-btn.png">
-                </div>
+              <div class="last-text">
+                   <!-- <img src="img/last-page-text.png"> -->
+                   <h1 style="font-size: 28px;color: #fff;margin: 0 auto;">
+                        恭喜这位顾客！扫描下方的二维码，准备品尝您特选的专属粽子吧！
+                   </h1>
+                   <a class="top-return" href="http://47.99.128.83:8000/goods">返回</a>
+                   <img class="last-page-wxcode" src="img/wxcode.png" alt="">
+              </div>
+              <div class="last-page-icon3">
+                   <img src="img/last-page-icon3.png">
+               </div>
+               <div class="comm-btn tz-col1-comm-btn">
+                            <div class="tz-col1-comm-cont">
+                                    <div class="btn-all">
+                                            <div style="width:60%;margin:0 auto;" class="btn1 btn" id="btn3"><img src="img/back-btn.png"></div>
+                                       </div>
+                            </div>
+                       </div>
          </div>
          <!-- 所有弹窗 -->
          <!-- 开始包粽子的提示弹窗 -->
@@ -512,8 +526,6 @@
          
     </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/tida.js"></script>
-<script type="text/javascript" src="js/head.js"></script>
 <script src="js/fillings_json.js"></script>
 <!-- <script src="/resources/wfz/js/tbIndex.js"></script> -->
 <script src="js/fillings_json.js"></script>

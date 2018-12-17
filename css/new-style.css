@@ -153,3 +153,26 @@
   animation-fill-mode:forwards;
   -webkit-animation-fill-mode: forwards;  
 }
+.five-page .last-page .last-text {
+  top: 2rem;
+}
+.last-page-wxcode{
+  width: 200px !important;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.top-return{
+  display: inline-block;
+  position: fixed;
+  right: 2%;
+  top: 10%;
+  padding: 0px 10px;
+  font-size: 22px;
+  line-height: 40px;
+  border-radius: 10px;
+  color: #eac27b;
+  border: 2px solid #eac27b;
+  background-color: #3f0f0d;
+  z-index: 9999;
+}
