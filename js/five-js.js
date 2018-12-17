@@ -1,4 +1,4 @@
-alert('five.js');
+alert('five.js------');
 // 甜粽子临时存储
 var sweetZZ = "none";
 // 咸粽子临时存储
