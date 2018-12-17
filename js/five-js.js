@@ -47,6 +47,8 @@ var preload = new Array(
 	"img/inde-img.png"
 	);
 
+	alert('five.js');
+
 //进度条js
 /*
 	function $s(d){

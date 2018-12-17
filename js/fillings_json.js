@@ -1,4 +1,3 @@
-alert('1');
 var fillingsJson = [
     ['黑猪梅花肉', '咸蛋黄', '黑猪后腿肉', 'NO:1'], 
     ['黑猪梅花肉', '咸蛋黄', '板栗', 'NO:2'], 
@@ -113,3 +112,4 @@ var pics = {
 };
 return pics[pacNo];
 }
+alert('json');
