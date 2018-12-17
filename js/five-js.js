@@ -48,31 +48,37 @@ var preload = new Array(
 	);
 
 //进度条js
+/*
 	function $s(d){
 	
 	return document.getElementById(d);
 	
 	}
+	*/
 	var sz="50%";
 		
 	function smation(){ 
 		// sz为0的时候 bar为0
 	if (sz=="0%") {
-		$s("bar").style.width = 0; 
-	}else
-	$s("bar").style.width = parseInt($s("bar").style.width) + 1 + "%"; 
-	$s("progress-sz").innerHTML = $s("bar").style.width; 
-	if($s("bar").style.width == "100%"){ 
+		$("#bar").css({'width':0}); 
+	}
+	$("#bar").width($("#bar").width()+10);
+	$("#progress-sz").html(parseInt((parseInt($("#bar").css('width'))/(parseInt($('#m-progress').css('width'))))*100)+'%'); 
+	if($("#bar").css('width') == $('#m-progress').css('width')){ 
 		$(".loading").hide();//当页面加载完成后将loading页隐藏  
 		$('.five-page').show();
-		window.clearInterval(bar);
+		window.clearInterval(bar);  //禁止执行  停住
 	  }
 	} 
 	var bar = setInterval(function(){
 	smation();
-	}, 30);
+	}, 300);
 	window.onload = function(){
 		bar;
+	}
+
+	function floatToInt(obj){
+		return parseInt(obj);
 	}
 
 $(function(){
@@ -138,10 +144,10 @@ $(function(){
 	    if('chose-middle1' == $(this).attr("value")) {
 	    	if(sweetZZ == 'NO:55' || sweetZZ == 'NO:57') {
 	    		// 大粽子显示抹茶底色
-				$("#operation-top").attr('class', 'operation-top rice-bg2');
+				$("#operation-top").attr('class', 'operation-top rice-bg2')
 	    	} else {
 	    		// 大粽子显示白色底色
-				$("#operation-top").attr('class', 'operation-top rice-bg1');
+				$("#operation-top").attr('class', 'operation-top rice-bg1')
 	    	}
 	    	// 此处为甜,隐藏咸味已选馅料
 	    	$("#sweetName").css('opacity', 1);
@@ -150,7 +156,7 @@ $(function(){
 	    	$('.operate1').show();
 	    } else {
 	    	// 大粽子显示棕色底色
-			$("#operation-top").attr('class', 'operation-top rice-bg3');
+			$("#operation-top").attr('class', 'operation-top rice-bg3')
 	    	// 此处为咸,隐藏甜味已选馅料
 			$("#sweetName").css('opacity', 0);
 			$("#saltyName").css('opacity', 1);
@@ -271,7 +277,7 @@ $(function(){
 			// 清空馅料区域内容及临时存储
 			if($('#chose-middle2').css('display') == 'none') {
 				// 此处为甜
-				$("#operation-top").attr('class', 'operation-top rice-bg1');
+				$("#operation-top").attr('class', 'operation-top rice-bg1')
 			}
 			$('.operate1 img').attr('src', 'img/lucency.jpg');
 			$('.operate3 img').attr('src', 'img/lucency.jpg');
@@ -290,7 +296,7 @@ $(function(){
 		// 对应粽子还原
 		$($(".standby-icon")[allIndex]).removeClass('standby-icon-cur');
 		// 馅料区域还原
-		$("#operation-top").attr('class', 'operation-top rice-bg1');
+		$("#operation-top").attr('class', 'operation-top rice-bg1')
 		$('.operate1 img').attr('src', 'img/lucency.jpg');
 		$('.operate3 img').attr('src', 'img/lucency.jpg');
 		$(".menu-box-fr1 ul li").removeClass("menu-black");
@@ -315,7 +321,7 @@ $(function(){
 		// 对应粽子还原
 		$($(".standby-icon")[allIndex]).removeClass('standby-icon-cur');
 		// 馅料区域还原
-		$("#operation-top").attr('class', 'operation-top rice-bg1');
+		$("#operation-top").attr('class', 'operation-top rice-bg1')
 		$('.operate1 img').attr('src', 'img/lucency.jpg');
 		$('.operate3 img').attr('src', 'img/lucency.jpg');
 		$(".menu-box-fr1 ul li").removeClass("menu-black");
@@ -387,10 +393,10 @@ $(function(){
 		// 判断馅料,更换大粽子颜色
 		if($(this).attr('value') == 'NO:55' || $(this).attr('value') == 'NO:57') {
 			// 此处显示抹茶色
-			$("#operation-top").attr('class', 'operation-top rice-bg2');
+			$("#operation-top").attr('class', 'operation-top rice-bg2')
 		} else {
 			// 此处显示白色
-			$("#operation-top").attr('class', 'operation-top rice-bg1');
+			$("#operation-top").attr('class', 'operation-top rice-bg1')
 		}
         // 显示图片
         $('.operate1 img').attr('src', $(this).children('span').children('img')[0].src);
@@ -401,7 +407,7 @@ $(function(){
 	// 甜粽子套餐点击事件
 	$(".menu-box-fl2 ul li").click(function(){
 		// 大粽子显示白色底色
-		$("#operation-top").attr('class', 'operation-top rice-bg1');
+		$("#operation-top").attr('class', 'operation-top rice-bg1')
 		// 馅料置灰
 //		$(".menu-box-fr2 ul li").addClass("menu-black");
 		// 判断选择的是哪个套餐,显示对应馅料图片,添加至临时存储
@@ -563,7 +569,7 @@ $(function(){
 			$('.operate3 img').attr('src', 'img/lucency.jpg');
 			$(".menu-box-fr1 ul li").removeClass("menu-black");
 			// 大粽子显示棕色底色
-			$("#operation-top").attr('class', 'operation-top rice-bg3');
+			$("#operation-top").attr('class', 'operation-top rice-bg3')
 			// 隐藏馅料名称
 			hideNames('salty');
 			// 清空临时存储
