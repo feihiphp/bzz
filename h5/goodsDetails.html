@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" id="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, user-scalable=no">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jq-weui.css">
+</head>
+<body>
+    <div class="goods-content">
+        <div class="goods-main">
+            <div class="art-top">
+                    <div class="weui-cells weui-cells_form" style="margin-top: 0;">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                  <!-- 轮播图 -->
+                                  <div class="swiper-slide"><img src="images/clothes.png" /></div>
+                                  <div class="swiper-slide"><img src="images/banner2.png" /></div>
+                                </div>
+                                <!-- 轮播圆点 -->
+                                <div class="swiper-pagination"></div>
+                              </div>
+                         </div>
+            </div>
+            <div class="goods-col1">
+                <div class="goodsTitle">
+                  <h1 class="goods-text">
+                    NIKE耐克男装卫衣2018秋冬新款运动服套头衫织休闲圆领外套
+                   </h1>
+                   <p class="goods-pri">¥<span class="goods-priNumber">280.00</span></p>
+                 
+                </div>
+                <div class="goods-col2" style="border-bottom: 10px solid rgb(240, 240, 240);">
+                    <div class="product-info">
+                        <h1>产品信息</h1>
+                        <ul class="pro-fl">
+                            <li>
+                                <p>分类</p>
+                                <span>生活用品</span>
+                            </li>
+                            <li>
+                                <p>供应商</p>
+                                <span>耐克</span>
+                            </li>
+                            <li>
+                                <p>单位</p>
+                                <span>包</span>
+                            </li>
+                            <li>
+                                <p>保质期</p>
+                                <span>永久</span>
+                            </li>
+                            <li>
+                                <p>货号</p>
+                                <span>1561651101</span>
+                            </li>
+                            <li>
+                                <p>生产日期</p>
+                                <span>2018-09-10</span>
+                            </li>
+                            <li>
+                                <p>品牌</p>
+                                <span>耐克</span>
+                            </li>
+                            <li>
+                                <p>材质</p>
+                                <span>布</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-col2" style="padding-bottom:40px;">
+                        <div class="product-info">
+                            <h1>产品图片</h1>
+                            <div class="pro-img">
+                                <ul>
+                                    <li>
+                                        <img src="images/clothes.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/clothes.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/clothes.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/clothes.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <div class="footer-btn">立即购买</div>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    
+    <script>
+    //轮播启动
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+      $('.footer-btn').click(function () {
+        //   window.location.href='http://www.baidu.com';
+          console.log('点击按钮')
+      })
+    </script>
+</body>
+</html>

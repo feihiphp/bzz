@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top img{
+    width: 100%;
+    height: 100%;
+}
+.act-main{
+    width: 100%;
+    height: 100%;
+}
+.act-textCont{
+    background-color: #8a0376;
+    margin: 20px 20px 48px 20px;
+    padding: 20px;
+}
+.act-col1 h1,p{
+    display: inline-block;
+}
+.act-col1 h1{
+    color: #fff;
+    font-size: 15px;
+    line-height: 29px;
+    margin-right: 20px;
+}
+.act-col1 p{
+    color: rgb(255, 196, 205);
+    font-size: 15px;
+    line-height: 29px;
+}
+.par-btn{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center
+}
+.par-btn p{
+    width: 80%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    background: -webkit-linear-gradient(left, #fff900 , #ff5200); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #fff900 , #ff5200); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #fff900 , #ff5200); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #fff900 , #ff5200); /* 标准的语法（必须放在最后） */
+}
+.swiper-container {
+    width: 100%;
+    height: 250px;
+
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+/* 文章详情 */
+.page-art{
+    margin: 30px 20px 0 20px;
+}
+.art-top img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.art-title{
+    color: rgb(26, 26, 26);
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.art-col p{
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+    line-height: 20px;
+    text-indent: 26px;
+    margin-bottom: 20px;
+}
+/* 领取优惠券 */
+.coupons-content{
+    width: 100%;
+    height: auto;
+    background-image: url(../images/coupons-bg.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.cou-col1 h1{
+    color: #fff;
+    font-size: 15px;
+    line-height: 29px;
+}
+.cou-col1 p{
+    color: rgb(255, 196, 205);
+    font-size: 15px;
+    line-height: 29px;
+}
+.art-input{
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+    ::-moz-placeholder { color: rgb(153, 153, 153); };
+    ::-webkit-input-placeholder { color:rgb(153, 153, 153); };
+    :-ms-input-placeholder { color:rgb(153, 153, 153); };
+/* 商品详情 */
+.goods-col1{
+    width: 100%;
+}
+.goodsTitle{
+    padding: 12px;
+    border-bottom: 10px solid rgb(240, 240, 240)
+}
+
+.goods-text{
+    font-size: 18px;
+    color: rgb(26, 26, 26);
+    line-height: 24px;
+    font-weight: 500;
+}
+.goods-pri{
+    font-size: 18px;
+    color: rgb(254, 0, 44)
+}
+.pro-fl{
+    overflow: hidden;
+    margin: 0 16px;
+    border-top: 1px solid #f0f0f0;
+}
+.pro-fl li p{
+    width: 66px;
+    padding-left: 10px;
+    margin-right: 20px;
+    color: #808080;
+}
+.pro-fl li{
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    width: 50%;
+}
+.product-info h1{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 16px;
+    line-height: 30px;
+    color: #000;
+    border-left: 3px solid #0384d3;
+}
+.pro-img ul li img{
+    width: 100%;
+    display: block;
+}
+.pro-img ul {
+    overflow: hidden;
+}
+.footer-btn{
+    background-color: #0384d3;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    bottom: 0;
+    width: 100%;
+}
